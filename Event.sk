@@ -24,7 +24,7 @@ command /event <string> [<string>] [<string>]:
 	usage: &9Do /event help
 	aliases: /e
 	permission: mineplex.admin
-	permission message: &9Permissions> &7This requires Permission Rank [&9ADMIN&7].
+	permission message: &9Permissions> &7You do not have permission to do that.
 	trigger:
 		if arg-1 is "help":
 			send "&9Event> &7Displaying Commands:" to player
@@ -42,4 +42,10 @@ command /event <string> [<string>] [<string>]:
 			send "&f/e radius: &eToggle Forcefield" to player
 			send "&f/e give: &eGive Item" to player
 			send "&f/e mob: &eSummon Mob" to player
+			
+command /hostevent:
+	permission: mineplex.admin
+	permission message: &9Permissions> &7You do not have permission to do that.
+	trigger:
+		send "We are still working on this command, but hope to be done soon!"
 
